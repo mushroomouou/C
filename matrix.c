@@ -12,7 +12,7 @@ int select_num(int m_1_l, int m_1_c,int m_2_l,int m_2_c)
     }else {
         printf("I am sorry . I don't know what you mean.");
     }
-
+    return 0;
 }
 
 int main(void)
