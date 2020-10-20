@@ -17,19 +17,23 @@ int select_num(int m_1_l, int m_1_c,int m_2_l,int m_2_c)
 
 int main(void)
 {
-    int i=0 , j=0 , v = 0 , s = 0 , swit,h,z,x1,x2,x3,stack,tamp;
+    int i=0 , j=0 , v = 0 , s = 0 , swit,x1,x2,x3,stack,tamp;
+    static int h;
+    static int z;
     char y;
     int result_plus[h][z];
     int result_mutiply[i][j];
     int matrix1_line_number,matrix1_column_number;
-    printf("Please input your matrix1 line number:");scanf("%d",&matrix1_line_number);
-    printf("Please input your matrix1 column number:");scanf("%d",&matrix1_column_number);
     int matrix1 [matrix1_line_number][matrix1_column_number];
+    puts("Please input your matrix1 line number:");scanf("%d",&matrix1_line_number);
+    puts("Please input your matrix1 column number:");scanf("%d",&matrix1_column_number);
+   
 
-    int matrix2_line_number,matrix2_column_number;
+    int matrix2_line_number = 0,matrix2_column_number = 0;
+    int matrix2 [matrix2_line_number][matrix2_column_number];
     printf("Please input your matrix2 line number:");scanf("%d",&matrix2_line_number);
     printf("Please input your matrix2 column number:");scanf("%d",&matrix2_column_number);
-    int matrix2 [matrix2_line_number][matrix2_column_number];
+    
     
     // Then will choose whether them can calculate or not???
     // Or ues which kinds of methods ????
@@ -90,6 +94,9 @@ int main(void)
             }
             printf("\n");
         }
+        printf("%d",result_plus[1][1]);
+        printf("%d\n",matrix2[1][1]);
+        printf("%d\n",matrix1[1][1]);
         break;
     
     case 2:
