@@ -42,16 +42,7 @@ int main(void)
     // Now we gonnan to write the plus method, mulitiplicate method 
     select_num(matrix1_line_number,matrix1_column_number,matrix2_line_number,matrix2_column_number);
     printf("Now we will input our element.\n");
-    do
-    {
-        do
-        {
-            scanf("%d",&matrix1[i][j]);
-            j ++;
-        } while ((y=getchar()) != '\n');
-        i ++;
-        j = 0;
-    } while (i != matrix1_line_number);
+    
     for (i = 0 ; i < matrix1_line_number ; i ++){
         for (j = 0; j < matrix1_column_number;j ++){
             printf("%4.d",matrix1[i][j]);
