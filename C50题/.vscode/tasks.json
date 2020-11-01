@@ -1,14 +1,15 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
             "type": "shell",
-            "label": "C/C++: gcc build active file",
-            "command": "/usr/bin/gcc ",
+            "label": "Debug C",
+            "command": "C:\\Program Files\\MinGW\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -20,13 +21,13 @@
         },
         {
             "type": "shell",
-            "label": "C/C++: gcc-8 build active file",
-            "command": "/usr/bin/gcc-8",
+            "label": "Debug C++",
+            "command": "C:\\Program Files\\MinGW\\bin\\g++.exe",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -34,11 +35,29 @@
             "problemMatcher": [
                 "$gcc"
             ],
+            "group": "build"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe build active file",
+            "command": "C:\\Program Files\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\Program Files\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "detail": "Generated task by Debugger"
         }
-    ],
-    "version": "2.0.0"
+    ]
 }

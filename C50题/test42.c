@@ -10,7 +10,7 @@ int main()
     int safeup = 0;
     int safelow = 0;
     int counts = 0;
-    printf("输入一个8到16位的密码！！\n");
+    printf("输入一个8到16位的密码！！把各种可能的方式都用上！\n");
     char *p = (char *)malloc(17 * sizeof(char));
     scanf("%s",p);
     do
