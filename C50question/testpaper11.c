@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <string.h>
-int main()
+struct student
+{
+    int age;
+    int number;
+}
+//int main()
 {
     char *str= "hahaha";
     printf("%d",strlen(str));
